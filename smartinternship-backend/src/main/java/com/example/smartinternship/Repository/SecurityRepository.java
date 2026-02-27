@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.example.smartinternship.Model.Users;
 
 @Repository
-public interface SecurityRepository extends JpaRepository<Users, Integer> {
+public interface SecurityRepository extends JpaRepository<Users, Long> {
 
 	Users findUserByEmail(String email);
 

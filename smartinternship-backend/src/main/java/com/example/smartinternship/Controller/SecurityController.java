@@ -15,12 +15,16 @@ import com.example.smartinternship.Service.SecurityService;
 		@Autowired
 		private SecurityService securityservice;
 		
+		@GetMapping("/")
+	public String greet() {
+		return "Hello";
+	}
 		@PostMapping("/signup")
 		public void signup(@RequestBody Users user) {
 			securityservice.signup(user);
 		}
 		@PostMapping("/signin")
-		public void signin(@RequestBody Users user){
-			  securityservice.signin(user);
+		public String signin(@RequestBody Users user){
+			return  securityservice.signin(user);
 		}
 	}

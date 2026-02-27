@@ -28,13 +28,14 @@ public class SecurityService {
 		securityrepo.save(user);
 	}
 
-	public void signin(Users user) {
-		 Authentication auth=authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
-				user.getEmail(),user.getPassword()));
-		 if(auth.isAuthenticated())
-			   jwtService.generateToken(user.getEmail());
+	public String signin(Users user) {
+		 Authentication auth=authenticationManager.authenticate(
+				 new UsernamePasswordAuthenticationToken(
+				user.getEmail(),
+				user.getPassword()));
 		 
-		
+			   return  jwtService.generateToken(user.getEmail());
+	
 	}
 
 }
