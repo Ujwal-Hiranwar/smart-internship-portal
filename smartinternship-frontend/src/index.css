@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  margin: 0;
+  background: linear-gradient(to bottom right, #312e81, #6b21a8, #000000);
+  min-height: 100vh;
+}
+html, body, #root {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}

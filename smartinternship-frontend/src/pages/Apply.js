@@ -34,93 +34,75 @@ export default function Apply() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white pt-24 px-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-black pt-24 px-4">
 
-      <div className="w-full max-w-2xl bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-xl">
+  <div className="w-full max-w-xl bg-white/10 backdrop-blur-lg border border-white/20 p-8 rounded-xl shadow-lg">
 
-        <h1 className="text-3xl font-bold text-center mb-6">
-          Internship Application
-        </h1>
+    <h1 className="text-3xl font-bold text-center mb-6 text-white">
+      Internship Application
+    </h1>
 
-        <form onSubmit={handleSubmit} className="space-y-5">
+    <form className="space-y-4">
 
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            required
-            onChange={handleChange}
-            className="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-400"
-          />
+      <input
+        type="text"
+        placeholder="Full Name"
+        className="w-full p-3 rounded-lg bg-black/40 text-white border border-white/10 focus:outline-none"
+      />
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-            onChange={handleChange}
-            className="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-400"
-          />
+      <input
+        type="email"
+        placeholder="Email Address"
+        className="w-full p-3 rounded-lg bg-black/40 text-white border border-white/10 focus:outline-none"
+      />
 
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            required
-            onChange={handleChange}
-            className="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-400"
-          />
+      <input
+        type="tel"
+        placeholder="Phone Number"
+        className="w-full p-3 rounded-lg bg-black/40 text-white border border-white/10 focus:outline-none"
+      />
 
-          <input
-            type="text"
-            name="college"
-            placeholder="College / University"
-            onChange={handleChange}
-            className="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-400"
-          />
+      <input
+        type="text"
+        placeholder="College / University"
+        className="w-full p-3 rounded-lg bg-black/40 text-white border border-white/10 focus:outline-none"
+      />
 
-          <input
-            type="text"
-            name="skills"
-            placeholder="Skills (React, Python, AI...)"
-            onChange={handleChange}
-            className="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-400"
-          />
+      <input
+        type="text"
+        placeholder="Skills (React, Python, AI...)"
+        className="w-full p-3 rounded-lg bg-black/40 text-white border border-white/10 focus:outline-none"
+      />
 
-          <input
-            type="text"
-            name="linkedin"
-            placeholder="LinkedIn Profile"
-            onChange={handleChange}
-            className="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-400"
-          />
+      <input
+        type="text"
+        placeholder="LinkedIn Profile"
+        className="w-full p-3 rounded-lg bg-black/40 text-white border border-white/10 focus:outline-none"
+      />
 
-          <input
-            type="text"
-            name="portfolio"
-            placeholder="Portfolio / GitHub"
-            onChange={handleChange}
-            className="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-400"
-          />
+      <input
+        type="text"
+        placeholder="Portfolio / GitHub"
+        className="w-full p-3 rounded-lg bg-black/40 text-white border border-white/10 focus:outline-none"
+      />
 
-          <textarea
-            name="message"
-            placeholder="Why should we hire you?"
-            rows="4"
-            onChange={handleChange}
-            className="w-full bg-black/40 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-400"
-          />
+      <textarea
+        placeholder="Why should we hire you?"
+        rows="4"
+        className="w-full p-3 rounded-lg bg-black/40 text-white border border-white/10 focus:outline-none"
+      />
 
-          <button
-            type="submit"
-            className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 rounded-lg font-semibold hover:from-pink-500 hover:to-purple-600 transition duration-300"
-          >
-            Submit Application
-          </button>
+      <button
+        type="submit"
+        className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 rounded-lg font-semibold hover:opacity-90 transition"
+      >
+        Submit Application
+      </button>
 
-        </form>
+    </form>
 
-      </div>
-    </div>
+  </div>
+
+</div>
   );
 }

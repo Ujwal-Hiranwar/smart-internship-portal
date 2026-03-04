@@ -85,6 +85,27 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <div className="flex justify-center gap-10 mt-10 text-center text-white">
+
+  <div>
+    <h3 className="text-3xl font-bold text-purple-400">120+</h3>
+    <p className="text-gray-300">Internships</p>
+  </div>
+
+  <div>
+    <h3 className="text-3xl font-bold text-pink-400">45+</h3>
+    <p className="text-gray-300">Companies</p>
+  </div>
+
+  <div>
+    <h3 className="text-3xl font-bold text-purple-400">300+</h3>
+    <p className="text-gray-300">Applications</p>
+  </div>
+
+</div>
+      <h2 className="text-2xl font-semibold text-center mt-16 mb-8 text-white">
+Featured Internships
+</h2>
 
       {/* Internship Cards */}
       <div className="grid md:grid-cols-3 gap-8">
