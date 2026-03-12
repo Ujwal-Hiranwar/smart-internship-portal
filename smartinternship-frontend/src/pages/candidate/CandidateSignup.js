@@ -26,7 +26,7 @@ export default function CandidateSignup() {
       setLoading(true);
 
       await axios.post(
-        "http://https://smartinternship-backend.onrender.com/signup",
+        "https://smartinternship-backend.onrender.com/signup",
         {
           name,
           email,

@@ -37,7 +37,7 @@ export default function Apply() {
     }
 
     try {
-      const response = await fetch("http://https://smartinternship-backend.onrender.com/applications/apply", {
+      const response = await fetch("https://smartinternship-backend.onrender.com/applications/apply", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

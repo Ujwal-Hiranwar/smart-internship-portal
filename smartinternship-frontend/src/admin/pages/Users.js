@@ -9,7 +9,7 @@ export default function Users() {
 
     try {
 
-      const res = await fetch("http://https://smartinternship-backend.onrender.com/admin/users");
+      const res = await fetch("https://smartinternship-backend.onrender.com/admin/users");
 
       const data = await res.json();
 

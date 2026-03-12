@@ -23,7 +23,7 @@ function AdminLogin() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://https://smartinternship-backend.onrender.com/signin",
+        "https://smartinternship-backend.onrender.com/signin",
         {
           email: email,
           password: password

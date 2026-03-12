@@ -12,7 +12,7 @@ export default function AdminApplications() {
 
   const fetchApplications = async () => {
 
-    const res = await fetch("http://https://smartinternship-backend.onrender.com/applications");
+    const res = await fetch("https://smartinternship-backend.onrender.com/applications");
     const data = await res.json();
 
     setApplications(data);
@@ -21,7 +21,7 @@ export default function AdminApplications() {
 
   const approveApplication = async (id) => {
 
-    await fetch(`http://https://smartinternship-backend.onrender.com/applications/${id}/approve`, {
+    await fetch(`https://smartinternship-backend.onrender.com/applications/${id}/approve`, {
       method: "PUT"
     });
 
@@ -30,7 +30,7 @@ export default function AdminApplications() {
 
   const rejectApplication = async (id) => {
 
-    await fetch(`http://https://smartinternship-backend.onrender.com/applications/${id}/reject`, {
+    await fetch(`https://smartinternship-backend.onrender.com/applications/${id}/reject`, {
       method: "PUT"
     });
 

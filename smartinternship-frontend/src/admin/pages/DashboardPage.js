@@ -27,7 +27,7 @@ export default function DashboardPage() {
         "Authorization": `Bearer ${token}`
       };
 
-      const statsRes = await fetch("http://https://smartinternship-backend.onrender.com/admin/dashboard/stats", { headers });
+      const statsRes = await fetch("https://smartinternship-backend.onrender.com/admin/dashboard/stats", { headers });
 
       if (!statsRes.ok) {
         throw new Error(`Stats fetch failed: ${statsRes.status}`);
@@ -35,7 +35,7 @@ export default function DashboardPage() {
 
       const statsData = await statsRes.json();
 
-      const recentRes = await fetch("http://https://smartinternship-backend.onrender.com/admin/dashboard/recent", { headers });
+      const recentRes = await fetch("https://smartinternship-backend.onrender.com/admin/dashboard/recent", { headers });
 
       if (!recentRes.ok) {
         throw new Error(`Recent fetch failed: ${recentRes.status}`);
