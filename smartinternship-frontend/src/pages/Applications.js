@@ -20,7 +20,7 @@ export default function Applications() {
         return;
       }
 
-      const res = await fetch(`http://localhost:8080/applications/my/${email}`, {
+      const res = await fetch(`http://https://smartinternship-backend.onrender.com/applications/my/${email}`, {
         headers: {
           "Authorization": `Bearer ${token}`
         }

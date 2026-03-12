@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const InternshipContext = createContext();
 
-const API = "http://localhost:8080";
+const API = "http://https://smartinternship-backend.onrender.com";
 
 export const InternshipProvider = ({ children }) => {
 
